@@ -1,207 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Aliya Putri Binti Roslan e-Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aliya Putri Binti Roslan | e-Portfolio</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 20px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-        h1{
-            text-align: center;
-            color: #2c3e50;
-        }
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
 
-        h2{
-            color: #34495e;
-        }
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
 
-        .card{
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
 
-        a{
-            color: #0077cc;
-            text-decoration: none;
-        }
+nav ul li{
+    margin:15px;
+}
 
-        a:hover{
-            text-decoration: underline;
-        }
+nav ul li a{
+    text-decoration:none;
+    color:#2c3e50;
+    font-weight:bold;
+}
 
-        ul{
-            line-height: 1.8;
-        }
-    </style>
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    text-align:center;
+    padding:120px 20px 80px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+h2{
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    margin-right:10px;
+    padding:10px 18px;
+    background:#3498db;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#2980b9;
+}
+
+.project-title{
+    color:#3498db;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#2c3e50;
+    color:white;
+}
+</style>
 </head>
 
 <body>
 
-<h1>Aliya Putri Binti Roslan e-Portfolio</h1>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#labs">Labs</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#reflection">Reflection</a></li>
+</ul>
+</nav>
 
-<!-- ABOUT ME -->
+<section class="hero">
+<h1>Aliya Putri Binti Roslan</h1>
+<p>A212577 | Mobile Programming e-Portfolio</p>
+<p>SDG 3: Good Health and Well-Being</p>
+</section>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section id="about" class="card">
+<h2>About Me</h2>
+
+<p><strong>Name:</strong> Aliya Putri Binti Roslan</p>
+<p><strong>Matric Number:</strong> A212577</p>
+<p><strong>Course:</strong> Mobile Programming</p>
+
+<br>
+
+<p>
+I am a student passionate about Android application development using
+Kotlin and Jetpack Compose. Throughout this course, I have developed
+multiple mobile applications while learning UI design, navigation,
+state management, Room Database, Firebase integration, API consumption,
+and sensor implementation.
+</p>
+
+<br>
+
+<p>
+This e-Portfolio showcases all laboratory exercises, project work,
+video demonstrations, reflections, and learning outcomes completed
+throughout the Mobile Programming course.
+</p>
+</section>
+
+<!-- LABS -->
+<section id="labs" class="card">
+<h2>Laboratory Exercises</h2>
+
+<h3>Lab 1</h3>
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab1">GitHub</a>
+<a class="btn" href="https://youtu.be/MmSK_wj32wQ?si=g5FRPYRZ9cbTqELh">Video</a>
+
+<br><br>
+
+<h3>Lab 2</h3>
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab2">GitHub</a>
+<a class="btn" href="https://youtu.be/fGs1_2osD3M">Video</a>
+
+<br><br>
+
+<h3>Lab 3</h3>
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab3">GitHub</a>
+<a class="btn" href="https://youtu.be/tgw84a9531Y">Video</a>
+
+<br><br>
+
+<h3>Lab 4</h3>
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab4">GitHub</a>
+<a class="btn" href="https://youtu.be/whsbNUugb-Y">Video</a>
+
+<br><br>
+
+<h3>Lab 5</h3>
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab5">GitHub</a>
+<a class="btn" href="https://youtu.be/gNqAQb8e9x8">Video</a>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
 <div class="card">
-    <h2>Student Information</h2>
+<h2 class="project-title">Project 1</h2>
 
-    <p><strong>Name:</strong> Aliya Putri Binti Roslan</p>
-    <p><strong>Matric Number:</strong> A212577</p>
-    <p><strong>Course:</strong> Mobile App Programming</p>
-    <p><strong>About Me:</strong>My name is Aliya Putri (A212577), a student taking Mobile Programming. I am passionate about learning Android application development using Kotlin and Jetpack Compose. Throughout this course, I have developed various mobile applications and gained experience in UI design, navigation, local database management (Room), cloud integration (Firebase), API consumption, and sensor implementation. My goal is to continuously improve my programming and problem-solving skills to create useful and user-friendly mobile applications.</p>
-    <p>
-        This e-Portfolio contains all laboratory exercises,
-        project demonstrations, source codes, reflections,
-        and video presentations completed throughout the course.
-    </p>
+<h3>Problem Statement</h3>
+<p>
+Many individuals struggle to monitor their health indicators effectively.
+This project was developed to help users calculate and understand their BMI
+while encouraging healthier lifestyle choices.
+</p>
 
-    <h3>SDG Theme</h3>
-    <p>SDG 3: Good Health and Well-Being</p>
-</div>    
-    
-<!-- LAB 1 -->
-<div class="card">
-    <h2>Lab 1</h2>
+<br>
 
-    <p><strong>Description:</strong> Introduction to Android Studio and Jetpack Compose.</p>
+<h3>Features</h3>
+<ul>
+<li>BMI Calculator</li>
+<li>BMI Category Analysis</li>
+<li>Diet Suggestions</li>
+</ul>
 
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab1">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/MmSK_wj32wQ?si=g5FRPYRZ9cbTqELh">YouTube Video</a></li>
-    </ul>
+<br>
 
-    <p><strong>Reflection:</strong> Learned basic Android project setup and Compose UI development.</p>
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Project1">GitHub Repository</a>
+<a class="btn" href="https://youtu.be/gBZdJFYxKi8">Project 1 VSR</a>
+
+<br><br>
+
+<p>
+<strong>Reflection:</strong>
+This project strengthened my understanding of Jetpack Compose UI design,
+user interaction, and Android application structure.
+</p>
 </div>
 
-<!-- LAB 2 -->
 <div class="card">
-    <h2>Lab 2</h2>
+<h2 class="project-title">Project 2 - Diet Diary App</h2>
 
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab2">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/fGs1_2osD3M">YouTube Video</a></li>
-    </ul>
+<h3>SDG Theme</h3>
+<p>SDG 3: Good Health and Well-Being</p>
 
-    <p><strong>Reflection:</strong> Improved understanding of layouts, composables, and user interaction.</p>
+<br>
+
+<h3>Problem Statement</h3>
+<p>
+Many people struggle to consistently monitor their BMI, hydration,
+physical activity, and exercise habits. The Diet Diary application
+helps users track their health progress through an integrated digital
+health monitoring platform.
+</p>
+
+<br>
+
+<h3>Features</h3>
+<ul>
+<li>BMI Calculator</li>
+<li>Water Intake Tracker</li>
+<li>Step Counter Sensor</li>
+<li>Exercise Recommendation API</li>
+<li>Activity Management</li>
+<li>Room Database Persistence</li>
+<li>Firebase Cloud Storage</li>
+<li>History Tracking</li>
+</ul>
+
+<br>
+
+<a class="btn" href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Project2">GitHub Repository</a>
+<a class="btn" href="https://youtu.be/moWz-pnlX00">Project 2 VSR</a>
+
+<br><br>
+
+<p>
+<strong>Reflection:</strong>
+This project provided valuable experience in integrating Android sensors,
+web APIs, Room Database, Firebase, and modern Jetpack Compose architecture
+into a complete mobile application.
+</p>
 </div>
 
-<!-- LAB 3 -->
-<div class="card">
-    <h2>Lab 3</h2>
+</section>
 
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab3">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/tgw84a9531Y">YouTube Video</a></li>
-    </ul>
+<!-- OVERALL REFLECTION -->
+<section id="reflection" class="card">
+<h2>Overall Reflection</h2>
 
-    <p><strong>Reflection:</strong> Learned navigation and state management techniques.</p>
+<p>
+Throughout this Mobile Programming course, I gained practical experience
+in Android development using Kotlin and Jetpack Compose. I learned how
+to design responsive user interfaces, implement navigation, manage state,
+integrate APIs, use Room Database and Firebase, and work with device
+sensors. These experiences significantly improved my technical,
+problem-solving, and software development skills.
+</p>
+
+</section>
+
 </div>
 
-<!-- LAB 4 -->
-<div class="card">
-    <h2>Lab 4</h2>
-
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab4">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/whsbNUugb-Y">YouTube Video</a></li>
-    </ul>
-
-    <p><strong>Reflection:</strong> Enhanced UI design skills and data handling methods.</p>
-</div>
-
-<!-- LAB 5 -->
-<div class="card">
-    <h2>Lab 5</h2>
-
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Lab5">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/gNqAQb8e9x8">YouTube Video</a></li>
-    </ul>
-
-    <p><strong>Reflection:</strong> Applied advanced Android features and architecture concepts.</p>
-</div>
-
-<!-- PROJECT 1 -->
-<div class="card">
-    <h2>Project 1</h2>
-
-    <h3>Problem Statement</h3>
-    <p>
-        Many people struggle to monitor their daily health habits such as BMI,
-        water intake, physical activity, and exercise consistency.
-        This application helps users track and improve their health through
-        a digital diet diary system.
-    </p>
-
-    <h3>Features</h3>
-    <ul>
-        <li>BMI Calculator</li>
-        <li>Daily Water Intake Tracker</li>
-        <li>Step Counter</li>
-    </ul>
-
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Project1">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/gBZdJFYxKi8">Project 1 VSR Video</a></li>
-    </ul>
-
-    <p><strong>Reflection:</strong> This project strengthened my Android development and UI implementation skills.</p>
-</div>
-
-<!-- PROJECT 2 -->
-<div class="card">
-    <h2>Project 2</h2>
-
-    <h3>Problem Statement</h3>
-    <p>
-        Many people struggle to monitor their daily health habits such as BMI,
-        water intake, physical activity, and exercise consistency.
-        This application helps users track and improve their health through
-        a digital diet diary system.
-    </p>
-
-    <h3>Features</h3>
-    <ul>
-        <li>BMI Calculator</li>
-        <li>Daily Water Intake Tracker</li>
-        <li>Step Counter Sensor Integration</li>
-        <li>Exercise Recommendations API</li>
-        <li>Activity Management</li>
-        <li>Room Database History Storage</li>
-        <li>Firebase Cloud Synchronization</li>
-    </ul>
-
-    <ul>
-        <li><a href="https://github.com/a212577-lab/a212577_Aliya_Nazatul_Project2">GitHub Repository</a></li>
-        <li><a href="https://youtu.be/moWz-pnlX00">Project 2 VSR Video</a></li>
-    </ul>
-
-    <p><strong>Reflection:</strong>
-        Through this project, I learned how to integrate sensors,
-        APIs, Room Database, Firebase, and Jetpack Compose into a complete Android application.
-    </p>
-</div>
-
-<!-- FINAL REFLECTION -->
-<div class="card">
-    <h2>Overall Reflection</h2>
-
-    <p>
-        Throughout this Mobile Programming course, I gained valuable experience
-        in Android development using Kotlin and Jetpack Compose. I learned UI design,
-        navigation, state management, API integration, Room Database, Firebase,
-        and sensor implementation. These projects improved my technical and
-        problem-solving skills in mobile application development.
-    </p>
-</div>
+<footer>
+<p>© 2026 Aliya Putri Binti Roslan | Mobile Programming e-Portfolio</p>
+</footer>
 
 </body>
 </html>
